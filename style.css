@@ -1,0 +1,90 @@
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.card{
+    width: 537px;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 24%);
+    position: relative;
+    
+}
+
+.advice{
+    height: auto;
+    padding: 16px 0px;
+    padding-top: 35px;
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.text{
+    height: auto;
+    padding: 0px 24px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    
+
+}
+
+.garis{
+    height: auto;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.dice{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px ;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color:hsl(150, 100%, 66%) ;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    
+    cursor: pointer;
+    
+}
+
+.dice:hover{
+    box-shadow: 0 0 35px 0 hsl(150, 100%, 66%) ;
+}
+
+@media (max-width:720px){
+    .card{
+        width: 300px;
+    }
+
+    .text{
+        padding: 0px 15px;
+        font-size: 20px;
+    
+    }
+
+    .garis{
+        background-image: url("./images/pattern-divider-mobile.svg");
+        background-size: contain;
+        margin-inline: 16px;
+    }
+}
